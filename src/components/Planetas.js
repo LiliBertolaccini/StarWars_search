@@ -23,7 +23,6 @@ export default function Planetas(planet) {
           </div>
         ) : null
         )}
-
               {/*{SWdata.map((el, i) =>
         el.filmes && el.filmes.length > 0 ? (
           <div key={i}>
