@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #202020;
+  color: #D8D5DB;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.table {
+  border: 2px solid #EEC643;
+  font-size: 2rem;
+  margin: 3rem;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 300;
+}
+
+th {
+  font-weight: 500;
+  line-heigth: 10;
+  border: none;
+}
+
+.table-head {
+  border-collapse: collapse;
+  background-color: #EEC643;
+  color: #202020;
+  font-size: 2.0rem;
+  padding-top: 10px;
+}
+
+.img-topo {
+  width: 100vw;
+}
+
+footer {
+  font-size: 1.0rem;
+  padding: 10px;
+  background-color: #202020;
+}
