@@ -1,67 +1,52 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SWdata from "../data/SWdata";
+import Filme from "./Filme";
 
 export default function Planetas(planet) {
-    //const filmes = () => { SWdata.map((el) => console.log(el))};
-  //console.log(Planetas);
-  //console.log(SWdata[0].filmes);
+  const [movie, setMovie] = useState();
+  const [closePlanet, setClosePlanet] = useState();
+
+  useEffect(() => {
+    setClosePlanet(planet.planet);
+  }, [planet]);
+  //console.log(SWdata[0]);
   return (
     <>
+      <Filme movie={movie} />
       {SWdata.map((el, i) =>
-        el.name === planet.planet ? (
-          <div>
-            <h2>{el.name}</h2>
-            <h2>{el.Information}</h2>
-            <h2>{el.image}</h2>
-            {el.filmes.map((filme, i) => (
-              <div>
-                <h2>{filme.titulo}</h2>
-                <h2>{filme.capaDoFilme}</h2>
-                <h2>{filme.sinopse}</h2>
-              </div>
-            ))}
+        el.name === closePlanet ? (
+          <div key={i} className="planetas-container">
+            <p className="modal-closeButton" onClick={() => setClosePlanet()}>X</p>
+            <img src={el.image} alt={el.name} className="img-planeta" />
+            <h1 className="planeta-h1">{el.name}</h1>
+            <div className="planetas-box">
+              <h2 className="planeta-h2">Caracteristicas:</h2>
+              <h3 className="planeta-h3">{el.Information}</h3>
+            </div>
+            <h2 className="planeta-h2">Filmes:</h2>
+            <div key={i} className="filmes">
+              {el.filmes.map((filme, i) => (
+                <div className="filmes-box" onClick={() => {
+                  setMovie(filme);
+                  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+                } }>
+                  <div className="filme-titulo">
+                    <h4 className="planeta-h4">{filme.titulo}</h4>
+                    <h4 className="planeta-h4">{filme.titulo2}</h4>
+                  </div>
+                  <div className="planeta-capa">
+                    <img
+                      src={filme.capaDoFilme}
+                      alt={filme.titulo}
+                      className="img-capaFilme"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         ) : null
-        )}
-              {/*{SWdata.map((el, i) =>
-        el.filmes && el.filmes.length > 0 ? (
-          <div key={i}>
-            {el.filmes.map((filme, j) => (
-              <div key={j}>
-                <h2>{filme.titulo}</h2>
-                <h2>{filme.capaDoFilme}</h2>
-                <h2>{filme.sinopse}</h2>
-              </div>
-            ))}
-          </div>
-        ) : null
-      )}*/}
-      {/*{SWdata.map((el, i) =>
-        el.filmes === planet.planet ? (
-          <div>
-            <h2>{el.filmes.titulo}</h2>
-            <h2>{el.filmes.capaDoFilme}</h2>
-            <h2>{el.filmes.sinopse}</h2>
-          </div>
-        ) : null
-      )}*/}
-        {/*{SWdata.map((el, i) => el.filmes === planet.planet ? (
-          <div>
-            <h2>{el.titulo}</h2>
-            <h2>{el.capaDoFilme}</h2>
-            <h2>{el.sinopse}</h2>
-          </div>
-        ) : null
-        )}*/}
-              {/*{SWdata.map((el, i) =>
-        el.filmes && el.filmes.titulo === planet.planet ? (
-          <div key={i}>
-            <h2>{el.filmes.titulo}</h2>
-            <h2>{el.filmes.capaDoFilme}</h2>
-            <h2>{el.filmes.sinopse}</h2>
-          </div>
-        ) : null
-      )}*/}
+      )}
     </>
   );
 }

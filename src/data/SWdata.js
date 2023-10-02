@@ -1,15 +1,21 @@
 import imgTatooine from "../images/planetas/Tatoooine.jpg";
 import esperanca1977 from "../images/capa/StarWars_Episódio_IV_Uma_Nova_Esperança(1977)/esperaca_1977.jpg";
 import ameaca_fantasma_1999 from "../images/capa/StarWars_Episódio_I_A_Ameaça_Fantasma(1999)/ameaca_fantasma_1999.jpg";
+import ameaca_fantasma_1999_2 from "../images/capa/StarWars_Episódio_I_A_Ameaça_Fantasma(1999)/ameaca_fantasma_1999_2.jpg";
 import clones_2000 from "../images/capa/StarWars_Episódio_II_Ataque_dos_Clones(2002)/clones_2000.jpg";
+import clones_2002_2 from "../images/capa/StarWars_Episódio_II_Ataque_dos_Clones(2002)/clones_2002_2.jpg";
 import vinganca_2005 from "../images/capa/StarWars_Episódio_III_A_Vingança_dos_Sith(2005)/vinganca_2005.jpg";
 import retorno_1983 from "../images/capa/StarWars_Episódio_VI_O_Retorno_do_Jedi(1983)/retorno_1983.jpg";
+import retorno_1983_2 from "../images/capa/StarWars_Episódio_VI_O_Retorno_do_Jedi(1983)/retorno_1983_2.jpg";
 import clones_2008 from "../images/capa/StarWars_A_Guerra_dos_Clones(2008)/clones_2008.jpg";
+import clones_2008_2 from "../images/capa/StarWars_A_Guerra_dos_Clones(2008)/clones_2008_2.jpg";
 import rebels_2014 from "../images/capa/StarWars_Rebels(2014)/rebels_2014.jpg";
 import mandalorian from "../images/capa/O_Mandaloriano(2019)/mandalorian.jpg";
+import mandalorian2 from "../images/capa/O_Mandaloriano(2019)/mandalorian_on_the_scene.jpg";
 import imgAlderaan from "../images/planetas/Alderaan.jpg";
 import rebel_2_ from "../images/capa/StarWars_Rebels(2014)/rebel_2_.jpg";
 import rogue_one from "../images/capa/Rogue_One_Uma_História_StarWars(2016)/rogue_one.jpg";
+import rogue_one_2 from "../images/capa/Rogue_One_Uma_História_StarWars(2016)/rogue_one_2.jpg";
 import imgYavin_4 from "../images/planetas/Yavin_4.jpg";
 import yavin_capa from "../images/capa/StarWars_Episódio_IV_Uma_Nova_Esperança(1977)/yavin_capa.jpg";
 import vinganca_yavin4 from "../images/capa/StarWars_Episódio_III_A_Vingança_dos_Sith(2005)/vinganca_yavin4.jpg";
@@ -22,6 +28,7 @@ import imgEndor from "../images/planetas/Endor.jpg";
 import imgNaboo from "../images/planetas/Naboo.jpg";
 import imgCoruscant from "../images/planetas/Coruscant.jpg";
 import imgKamino from "../images/planetas/Kamino.jpg";
+import cinco2 from "../images/capa/StarWars_Episódio_V_O_Império_Contra_Ataca(1980)/ep_5-2.jpeg";
 
 const SWdata = [
   {
@@ -48,57 +55,104 @@ const SWdata = [
     image: imgTatooine,
     filmes: [
       {
-        titulo: "Star Wars: Episódio IV - Uma Nova Esperança (1977)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio IV",
+        titulo2: "Uma Nova Esperança (1977)",
         capaDoFilme: esperanca1977,
-        // igual ao Information
+        capaDoFilme2: yavin_capa,
         sinopse: `Em uma galáxia distante, um jovem fazendeiro chamado Luke Skywalker se junta a um grupo de rebeldes na luta contra o malvado Império Galáctico. Quando uma mensagem holográfica da Princesa Leia Organa cai em suas mãos, Luke embarca em uma jornada épica ao lado do sábio Jedi Obi-Wan Kenobi, do destemido piloto Han Solo e do leal androide R2-D2. A aventura leva-os a Tatooine, onde Luke descobre sua verdadeira identidade e enfrenta o vilão Darth Vader.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Po1Z_X0FpzY?si=y0kX3bWPE5uq38jx"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio I - A Ameaça Fantasma (1999)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio I",
+        titulo2: "A Ameaça Fantasma (1999)",
         capaDoFilme: ameaca_fantasma_1999,
-        // igual ao Information
-        sinopse: `Ambientado décadas antes dos eventos do Episódio IV, o filme segue os Jedi Qui-Gon Jinn e
-      Obi-Wan Kenobi em uma missão para negociar uma disputa política.
-      Eles encontram Anakin Skywalker, um jovem escravo com habilidades extraordinárias.
-      Enquanto tentam proteger o garoto do misterioso Sith Lord Darth Maul, eles descobrem que Anakin pode ser a chave para o destino da galáxia.
-      "A Ameaça Fantasma" se passa aproximadamente 32 anos antes dos eventos do filme original de Star Wars. O filme começa com a disputa comercial entre a Federação do Comércio e o pacífico planeta de Naboo. A Federação bloqueia Naboo, forçando a jovem Rainha Padmé Amidala a buscar ajuda no Senado Galáctico.
-      Durante sua visita a Coruscant, a capital galáctica, Padmé conhece o jovem Anakin Skywalker, um talentoso piloto de corridas de pods e escravo. O Mestre Jedi Qui-Gon Jinn e seu aprendiz Obi-Wan Kenobi identificam em Anakin um alto potencial para se tornar um Jedi. Eles acreditam que ele pode ser o escolhido destinado a trazer equilíbrio à Força.
-      Qui-Gon e Obi-Wan embarcam em uma missão para ajudar Naboo e enfrentar a Federação do Comércio. Eles encontram o misterioso Darth Maul, um Sith treinado nas artes do lado sombrio da Força, que representa uma ameaça crescente.
-      O filme apresenta diversas batalhas, incluindo a luta de Qui-Gon e Obi-Wan contra Darth Maul e a batalha final em Naboo, onde a Rainha Padmé, os Gungans (nativos de Naboo) e os Jedi se unem para derrotar a Federação do Comércio.
-      "A Ameaça Fantasma" introduz personagens icônicos como Obi-Wan Kenobi, Qui-Gon Jinn, Padmé Amidala e Darth Maul, além de explorar a origem de Anakin Skywalker, que desempenhará um papel crucial na história de Star Wars. O filme também explora temas de política, guerra e o crescimento das forças do lado sombrio da Força, estabelecendo o cenário para os eventos futuros da saga.`,
+        capaDoFilme2: ameaca_fantasma_1999_2,
+        sinopse: `Obi-Wan e seu mentor embarcam em uma perigosa aventura na tentativa de salvar o planeta das garras de Darth Sidious. Durante a viagem, eles conhecem um habilidoso menino e decidem treiná-lo para se tornar um Jedi. Mas o tempo irá revelar que as coisas nem sempre são o que aparentam ser.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-JdrAxMHzyA?si=pUpm1jAnHyZjQ-Q0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio II - Ataque dos Clones (2002)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio II",
+        titulo2: "Ataque dos Clones (2002)",
         capaDoFilme: clones_2000,
-        // igual ao Information
+        capaDoFilme2: clones_2002_2,
         sinopse: `Dez anos após os eventos do Episódio I, o jovem Jedi Anakin Skywalker está treinando para se tornar um cavaleiro Jedi
-      sob a tutela de Obi-Wan Kenobi.
-      Enquanto a galáxia se encaminha para a guerra, eles são enviados para proteger a senadora Padmé Amidala,
-      que está sendo alvo de um assassino desconhecido.
-      Durante sua missão, eles retornam a Tatooine, onde Anakin confronta seu passado e enfrenta o perigo em busca de sua mãe.`,
+        sob a tutela de Obi-Wan Kenobi.
+        Enquanto a galáxia se encaminha para a guerra, eles são enviados para proteger a senadora Padmé Amidala,
+        que está sendo alvo de um assassino desconhecido.
+        Durante sua missão, eles retornam a Tatooine, onde Anakin confronta seu passado e enfrenta o perigo em busca de sua mãe.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gYbW1F_c9eM?si=qSQltgF-Pfv0XzLQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio III - A Vingança dos Sith (2005)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio III",
+        titulo2: "A Vingança dos Sith (2005)",
         capaDoFilme: vinganca_2005,
-        // igual ao Information
+        capaDoFilme2: vinganca_yavin4,
         sinopse: `À medida que a guerra entre a República e os Separatistas se intensifica, o Cavaleiro Jedi Anakin Skywalker é atormentado por visões perturbadoras de sua esposa, Padmé Amidala, em perigo. Seduzido pelo lado sombrio da Força e manipulado pelo Chanceler Palpatine, Anakin se transforma em Darth Vader, o aprendiz Sith. Neste capítulo final da trilogia prequela, Obi-Wan Kenobi enfrenta seu ex-aluno em um confronto épico, enquanto a galáxia mergulha na escuridão.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/opfJIo__ANQ?si=3fKVEVWWZ1A9WVD8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio VI - O Retorno de Jedi (1983)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio VI",
+        titulo2: "O Retorno de Jedi (1983)",
         capaDoFilme: retorno_1983,
-        // igual ao Information
+        capaDoFilme2: retorno_1983_2,
         sinopse: `A Aliança Rebelde está se preparando para lançar um ataque final contra a Estrela da Morte, a estação de batalha do Império. Enquanto Luke Skywalker busca resgatar o seu amigo Han Solo das garras de Jabba the Hutt em Tatooine, a Princesa Leia, junto com o contrabandista Han Solo e seus companheiros, se preparam para enfrentar o Imperador Palpatine. A batalha final entre a luz e a escuridão se desenrola enquanto o destino da galáxia está em jogo.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1GjZ0m_mKmM?si=HTTvyDOnQ93NLXUK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "Star Wars: The Clone Wars",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
-        capaDoFilme: clones_2008,
-        // igual ao Information
+        titulo2: " ",
+        capaDoFilme: clones_2000,
+        capaDoFilme2: clones_2008_2,
         sinopse: `É uma série animada que se passa entre os eventos dos filmes:
       "Star Wars: Episódio II - Ataque dos Clones" e
       "Star Wars: Episódio III - A Vingança dos Sith".
@@ -106,25 +160,47 @@ const SWdata = [
       contra a Aliança Separatista. Através de episódios emocionantes e empolgantes,
       a série explora as aventuras de personagens como Anakin Skywalker, Obi-Wan Kenobi, Ahsoka Tano e vários outros
       Jedi e clones enquanto lutam pela sobrevivência e pela vitória na galáxia.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vdQNh2hgMTE?si=dOAmw2nBWwuS6dql"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "Star Wars Rebels",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo2: " ",
         capaDoFilme: rebels_2014,
-        // igual ao Information
+        capaDoFilme2: rebel_2_,
         sinopse: `Situada cinco anos antes dos eventos de "Star Wars:
-      Episódio IV - Uma Nova Esperança",
-      "Star Wars Rebels" segue a história de um grupo de rebeldes que se unem para enfrentar o Império Galáctico.
-      A série apresenta o jovem Ezra Bridger, que se junta à tripulação da nave Ghost,
-      composta por Hera Syndulla, Kanan Jarrus, Zeb Orrelios, Sabine Wren e Chopper.
-      Juntos, eles realizam missões ousadas e perigosas contra as forças imperiais
-      enquanto lutam pela liberdade e pela esperança na galáxia.`,
+        Episódio IV - Uma Nova Esperança",
+        "Star Wars Rebels" segue a história de um grupo de rebeldes que se unem para enfrentar o Império Galáctico.
+        A série apresenta o jovem Ezra Bridger, que se junta à tripulação da nave Ghost,
+        composta por Hera Syndulla, Kanan Jarrus, Zeb Orrelios, Sabine Wren e Chopper.
+        Juntos, eles realizam missões ousadas e perigosas contra as forças imperiais
+        enquanto lutam pela liberdade e pela esperança na galáxia.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xg5YN3LAGw4?si=eB5gvG64YSkTqW_D"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "The Mandalorian",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo2: " ",
         capaDoFilme: mandalorian,
-        // igual ao Information
+        capaDoFilme2: mandalorian2,
         sinopse: `É uma série live-action que se passa após os eventos de "Star Wars: Episódio VI - O Retorno de Jedi".
       A história acompanha um caçador de recompensas solitário e misterioso, conhecido como "O Mandaloriano" ou
       "Mando", em suas aventuras através dos confins da galáxia.
@@ -132,6 +208,17 @@ const SWdata = [
       chamada "The Child", carinhosamente apelidada de Baby Yoda pelos fãs.
       A série explora as jornadas de Mando e Baby Yoda enquanto eles enfrentam perigos, desvendam segredos e
       se envolvem em uma narrativa emocionante e cheia de ação.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ra8sFRnLOJM?si=ytj2tjL158e-5B-o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -163,10 +250,10 @@ const SWdata = [
     image: imgAlderaan,
     filmes: [
       {
-        titulo: "Star Wars: Episódio IV - Uma Nova Esperança (1977)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio IV",
+        titulo2: "Uma Nova Esperança (1977)",
         capaDoFilme: esperanca1977,
-        // igual ao Information
+        capaDoFilme2: yavin_capa,
         sinopse: `Em uma galáxia distante, a Aliança Rebelde luta contra o opressivo Império Galáctico.
       A Princesa Leia Organa é capturada pelas forças imperiais, mas antes de ser capturada,
       ela envia uma mensagem holográfica ao Jedi Obi-Wan Kenobi, pedindo ajuda. Luke Skywalker,
@@ -174,35 +261,79 @@ const SWdata = [
       para resgatar a princesa e destruir a temível Estrela da Morte.
       No entanto, eles descobrem que Alderaan, o planeta natal de Leia, foi destruído pela Estrela da Morte,
       alimentando sua determinação de derrotar o Império.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9gvqpFbRKtQ?si=F_qZMHB-Yu-w5J4p"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio III - A Vingança dos Sith (2005)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio III",
+        titulo2: "A Vingança dos Sith (2005)",
         capaDoFilme: vinganca_2005,
-        // igual ao Information
+        capaDoFilme2: vinganca_yavin4,
         sinopse: `Neste filme, os eventos levam à transformação de Anakin Skywalker no vilão Darth Vader.
       Embora Alderaan não seja mostrado diretamente, ele é mencionado em diálogos entre Bail Organa e outros senadores,
       destacando sua importância como um planeta pacífico e lar adotivo da Princesa Leia.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/opfJIo__ANQ?si=3fKVEVWWZ1A9WVD8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "Star Wars Rebels (2014-2018)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo2: " ",
         capaDoFilme: rebel_2_,
-        // igual ao Information
+        capaDoFilme2: rebels_2014,
         sinopse: `A série animada "Star Wars Rebels" acompanha um grupo de rebeldes que lutam contra o Império Galáctico.
       Embora Alderaan não seja o foco principal da série, há referências a Alderaan ao longo da narrativa,
       destacando a importância do planeta e seu destino trágico.
       Além disso, a série explora o papel da Princesa Leia e sua conexão com Alderaan.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_soLH5MWGOg?si=J3Vd-Gjkt7xEduEX"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "Rogue One: Uma História Star Wars (2016)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo2: " ",
         capaDoFilme: rogue_one,
-        // igual ao Information
+        capaDoFilme2: rogue_one_2,
         sinopse: `O filme "Rogue One" se passa pouco antes dos eventos de "Star Wars: Episódio IV - Uma Nova Esperança" e
       segue um grupo de rebeldes que roubam os planos da Estrela da Morte.
       Embora Alderaan não seja diretamente apresentado, o filme estabelece a importância dos planos roubados para a Aliança Rebelde,
       e a destruição de Alderaan é o exemplo mais significativo do poder destrutivo da Estrela da Morte.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ySVDUw-c3PU?si=5CNiX5_F36QEn-r2"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -242,10 +373,10 @@ const SWdata = [
     image: imgYavin_4,
     filmes: [
       {
-        titulo: "Star Wars: Episódio IV - Uma Nova Esperança (1977)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio IV",
+        titulo2: "Uma Nova Esperança (1977)",
         capaDoFilme: yavin_capa,
-        // igual ao Information
+        capaDoFilme2: esperanca1977,
         sinopse: `Em uma galáxia distante, a Aliança Rebelde luta contra o opressivo Império Galáctico.
       A Princesa Leia Organa é capturada pelas forças imperiais, mas antes de ser capturada,
       ela envia uma mensagem holográfica ao Jedi Obi-Wan Kenobi, pedindo ajuda. Luke Skywalker,
@@ -253,16 +384,38 @@ const SWdata = [
       para resgatar a princesa e destruir a temível Estrela da Morte.
       No entanto, eles descobrem que Alderaan, o planeta natal de Leia, foi destruído pela Estrela da Morte,
       alimentando sua determinação de derrotar o Império.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9gvqpFbRKtQ?si=F_qZMHB-Yu-w5J4p"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio III - A Vingança dos Sith",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio III",
+        titulo2: "A Vingança dos Sith",
         capaDoFilme: vinganca_yavin4,
-        // igual ao Information
+        capaDoFilme2: vinganca_2005,
         sinopse: `Neste filme, os eventos levam à transformação de Anakin Skywalker no vilão Darth Vader.
       Embora Alderaan não seja mostrado diretamente, ele é mencionado em diálogos entre Bail Organa e outros senadores,
       destacando sua importância como um planeta pacífico e lar adotivo da Princesa Leia;
       Neste filme, Yavin 4 é visto durante uma cena que mostra uma reunião de senadores antes da formação do Império.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/opfJIo__ANQ?si=3fKVEVWWZ1A9WVD8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -285,10 +438,10 @@ const SWdata = [
     image: Hoth,
     filmes: [
       {
-        titulo: "Star Wars: Episódio V - O Império Contra-Ataca (1980)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio V",
+        titulo2: "O Império Contra-Ataca (1980)",
         capaDoFilme: cinco,
-        // igual ao Information
+        capaDoFilme2: cinco2,
         sinopse: `Após a destruição da Estrela da Morte, a Aliança Rebelde está em fuga e busca um novo local seguro.
       Eles estabelecem uma base temporária em Hoth, um planeta gelado. No entanto, o Império Galáctico,
       descobre a localização da base rebelde e lança um ataque maciço.
@@ -297,18 +450,37 @@ const SWdata = [
       Enquanto isso, Han Solo e a Princesa Leia fogem em direção a Bespin para buscar ajuda, mas acabam enfrentando perigos inesperados.
       "O Império Contra-Ataca" apresenta uma narrativa emocionante, revelações surpreendentes e a lendária batalha em Hoth,
       com os rebeldes lutando pela sobrevivência em um ambiente hostil e contra um inimigo poderoso.`,
-        //Eles estabelecem uma base temporária em Hoth, um planeta gelado. No entanto, o Império Galáctico descobre a localização da base rebelde e lança um ataque maciço.
-        //Os rebeldes são forçados a evacuar a base enquanto enfrentam as forças imperiais. Luke Skywalker, em busca de treinamento Jedi,
-        //parte para o planeta pantanoso de Dagobah para encontrar o Mestre Yoda.
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/aCj81910awU?si=TQx7mCDZja4DD8pa"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "Star Wars Rebels (2014-2018)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo2: " ",
         capaDoFilme: rebels_new,
-        // igual ao Information
+        capaDoFilme2: rebels_2014,
         sinopse: `Embora não seja o cenário principal da série, Hoth é mencionado em alguns episódios de "Star Wars Rebels".
       Os personagens da série discutem a Batalha de Hoth e o envolvimento da Aliança Rebelde.
       Nesse evento crucial na luta contra o Império Galáctico.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_soLH5MWGOg?si=4wCaeCAaKRJHvAWM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -336,10 +508,10 @@ const SWdata = [
     image: imgDagobah,
     filmes: [
       {
-        titulo: "Star Wars: Episódio V - O Império Contra-Ataca (1980)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio V",
+        titulo2: "O Império Contra-Ataca (1980)",
         capaDoFilme: cinco,
-        // igual ao Information
+        capaDoFilme2: cinco2,
         sinopse: `Após a destruição da Estrela da Morte, a Aliança Rebelde está em fuga e busca um novo local seguro.
       Eles estabelecem uma base temporária em Hoth, um planeta gelado. No entanto, o Império Galáctico,
       descobre a localização da base rebelde e lança um ataque maciço.
@@ -348,20 +520,41 @@ const SWdata = [
       Enquanto isso, Han Solo e a Princesa Leia fogem em direção a Bespin para buscar ajuda, mas acabam enfrentando perigos inesperados.
       "O Império Contra-Ataca" apresenta uma narrativa emocionante, revelações surpreendentes e a lendária batalha em Hoth,
       com os rebeldes lutando pela sobrevivência em um ambiente hostil e contra um inimigo poderoso.`,
-        //Eles estabelecem uma base temporária em Hoth, um planeta gelado. No entanto, o Império Galáctico descobre a localização da base rebelde e lança um ataque maciço.
-        //Os rebeldes são forçados a evacuar a base enquanto enfrentam as forças imperiais. Luke Skywalker, em busca de treinamento Jedi,
-        //parte para o planeta pantanoso de Dagobah para encontrar o Mestre Yoda.
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Dea4bypvgao?si=BX6PtWAghAuz7qcV"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio VI - O Retorno de Jedi (1983)",
+        titulo: "Star Wars: Episódio VI",
+        titulo2: "O Retorno de Jedi (1983)",
         // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
         capaDoFilme: retorno_1983,
+        capaDoFIlme2: retorno_1983_2,
         // igual ao Information
         sinopse: `A Aliança Rebelde está se preparando para lançar um ataque final contra a Estrela da Morte,
       a estação de batalha do Império.
       Enquanto Luke Skywalker busca resgatar o seu amigo Han Solo das garras de Jabba the Hutt em Tatooine, a Princesa Leia,
       junto com o contrabandista Han Solo e seus companheiros, se preparam para enfrentar o Imperador Palpatine.
       A batalha final entre a luz e a escuridão se desenrola enquanto o destino da galáxia está em jogo.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/16YLjTkK5jE?si=mN5qCc41pw2zUylP"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -391,25 +584,47 @@ const SWdata = [
     image: imgBespin,
     filmes: [
       {
-        titulo: "Star Wars: Episódio V - O Império Contra-Ataca (1980)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio V",
+        titulo2: "O Império Contra-Ataca (1980)",
         capaDoFilme: cinco,
-        // igual ao Information
+        capaDoFilme2: cinco2,
         sinopse: `Bespin é apresentado neste filme como o local da Cidade das Nuvens, uma colônia flutuante administrada por Lando Calrissian.
-      Após escapar do ataque imperial em Hoth, Han Solo, Leia Organa, Chewbacca e C-3PO vão para Bespin 
-      em busca de refúgio.
-      No entanto, eles são traídos por Lando, que faz um acordo com Darth Vader.
-      Han Solo é congelado em carbonita e entregue a Boba Fett, enquanto Luke Skywalker chega a Bespin para resgatar seus amigos.
-      A batalha final ocorre nas plataformas da Cidade das Nuvens, com Luke enfrentando Darth Vader em um duelo de sabres de luz.`,
+        Após escapar do ataque imperial em Hoth, Han Solo, Leia Organa, Chewbacca e C-3PO vão para Bespin 
+        em busca de refúgio.
+        No entanto, eles são traídos por Lando, que faz um acordo com Darth Vader.
+        Han Solo é congelado em carbonita e entregue a Boba Fett, enquanto Luke Skywalker chega a Bespin para resgatar seus amigos.
+        A batalha final ocorre nas plataformas da Cidade das Nuvens, com Luke enfrentando Darth Vader em um duelo de sabres de luz.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Dea4bypvgao?si=BX6PtWAghAuz7qcV"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "Star Wars Rebels (2014-2018)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo2: " ",
         capaDoFilme: rebels_new,
-        // igual ao Information
+        capaDoFilme2: rebels_2014,
         sinopse: `Embora não seja o cenário principal da série, Hoth é mencionado em alguns episódios de "Star Wars Rebels".
       Os personagens da série discutem a Batalha de Hoth e o envolvimento da Aliança Rebelde.
       Nesse evento crucial na luta contra o Império Galáctico.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_soLH5MWGOg?si=4wCaeCAaKRJHvAWM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -435,9 +650,11 @@ const SWdata = [
     image: imgEndor,
     filmes: [
       {
-        titulo: "Star Wars: Episódio VI - O Retorno de Jedi (1983)",
+        titulo: "Star Wars: Episódio VI",
+        titulo2: "O Retorno de Jedi (1983)",
         // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
         capaDoFilme: retorno_1983,
+        capaDoFIlme2: retorno_1983_2,
         // igual ao Information
         sinopse: `A sinopse do filme relacionada com a cidade Endor que a cidade é apresentada no filme como
       o local da Batalha de Endor que desempenha um papel crucial na luta final entre a Aliança Rebelde e o Império Galáctico.
@@ -445,6 +662,17 @@ const SWdata = [
       Uma equipe liderada por Han Solo, Princesa Leia, Chewbacca e outros rebeldes é enviada para a superfície de Endor para desativar o escudo que protege a Estrela da Morte.
       Enquanto isso, Luke Skywalker enfrenta Darth Vader e o Imperador Palpatine a bordo da Estrela da Morte.
       A Batalha de Endor é marcada por confrontos entre as forças rebeldes, os soldados imperiais e os Ewoks, nativos de Endor.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/16YLjTkK5jE?si=mN5qCc41pw2zUylP"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -472,10 +700,10 @@ const SWdata = [
     image: imgNaboo,
     filmes: [
       {
-        titulo: "Star Wars: Episódio I - A Ameaça Fantasma (1999)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
-        capaDoFilme: retorno_1983,
-        // igual ao Information
+        titulo: "Star Wars: Episódio I",
+        titulo2: "A Ameaça Fantasma (1999)",
+        capaDoFilme: ameaca_fantasma_1999,
+        capaDoFilme2: ameaca_fantasma_1999_2,
         sinopse: `A sinopse do filme relacionada com a cidade Naboo é apresentado neste filme como um dos principais cenários da trama.
       O planeta é governado pela Rainha Padmé Amidala, e quando a Federação do Comércio bloqueia o planeta em uma tentativa de controle,
       Padmé busca ajuda no Senado Galáctico.
@@ -503,6 +731,17 @@ const SWdata = [
       além de explorar a origem de Anakin Skywalker, que desempenhará um papel crucial na história de Star Wars.
       O filme também explora temas de política, guerra e o crescimento das forças do lado sombrio da Força,
       estabelecendo o cenário para os eventos futuros da saga.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-JdrAxMHzyA?si=JgX1h9tFvCLrWowF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
@@ -514,10 +753,10 @@ const SWdata = [
     image: imgCoruscant,
     filmes: [
       {
-        titulo: "Star Wars: Episódio I - A Ameaça Fantasma (1999)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio I",
+        titulo2: "A Ameaça Fantasma (1999)",
         capaDoFilme: retorno_1983,
-        // igual ao Information
+        capaDoFilme2: retorno_1983_2,
         sinopse: `A sinopse do filme relacionada com a cidade Coruscant é apresentado neste filme,
       como sendo o centro político da galáxia.
       É onde o Senado Galáctico está localizado e onde a Rainha Padmé Amidala busca ajuda para salvar seu planeta, Naboo.
@@ -540,12 +779,23 @@ const SWdata = [
       além de explorar a origem de Anakin Skywalker, que desempenhará um papel crucial na história de Star Wars.
       O filme também explora temas de política, guerra e o crescimento das forças do lado sombrio da Força,
       estabelecendo o cenário para os eventos futuros da saga.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/uMoSnrd7i5c?si=wGBKxF6T4Lg5netZ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio II - Ataque dos Clones (2002)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio II",
+        titulo2: "Ataque dos Clones (2002)",
         capaDoFilme: clones_2000,
-        // igual ao Information
+        capaDoFilme2: clones_2002_2,
         sinopse: `A sinopse do filme relacionada com a cidade de Coruscant é apresentada no filme desempenha um papel importante.
       É onde a maior parte da trama política se desenrola, com o Senado Galáctico debatendo a formação de um exército para a República.
       Além disso, é onde Anakin Skywalker e Padmé Amidala se reencontram e iniciam um romance proibido.
@@ -554,12 +804,23 @@ const SWdata = [
       que se tornou o alvo de um assassino misterioso. Enquanto investigam a conspiração, Anakin e Padmé desenvolvem um romance proibido.
       Ao mesmo tempo, Obi-Wan Kenobi embarca em sua própria missão para descobrir os planos dos separatistas e acaba descobrindo a criação de um exército de clones.
       "Ataque dos Clones" é um filme cheio de ação, romance e revelações, preparando o terreno para os eventos futuros da saga.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gYbW1F_c9eM?si=BHrSzu04p8ornagW"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
-        titulo: "Star Wars: Episódio III - A Vingança dos Sith (2005)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
+        titulo: "Star Wars: Episódio III",
+        titulo2: "A Vingança dos Sith (2005)",
         capaDoFilme: vinganca_2005,
-        // igual ao Information
+        capaDoFilme2: vinganca_yavin4,
         sinopse: `A sinopse do filme relacionada com a cidade Coruscant é fundamental neste filme, pois a guerra dos Clones atinge seu clímax.
       É onde ocorrem batalhas épicas e confrontos entre os Jedi e os Sith. 
       A trama se concentra no assassinato do Conde Dookan, a ascensão de Palpatine como Imperador e a transformação de Anakin Skywalker em Darth Vader.
@@ -569,12 +830,23 @@ const SWdata = [
       O filme segue Anakin Skywalker, agora um Cavaleiro Jedi, enquanto ele é atormentado por visões de morte e perda. 
       À medida que a guerra se intensifica, Anakin é seduzido pelo lado sombrio da Força e se torna o aprendiz de Palpatine, renascendo como o temível Darth Vader.
       "A Vingança dos Sith" apresenta a queda dos Jedi, o surgimento do Império Galáctico e o destino trágico de Anakin Skywalker.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/EUB7bwL6RvE?si=U4EoSH7ReY6hTHyj"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
       {
         titulo: "Star Wars: The Clone Wars (2008-2020)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
-        capaDoFilme: retorno_1983,
-        // igual ao Information
+        titulo2: " ",
+        capaDoFilme: clones_2008,
+        capaDoFilme2: clones_2008_2,
         sinopse: `A sinopse dessa série de animação relacionada com a cidade Coruscant "Star Wars: The Clone Wars" apresenta vários episódios
       que se passam em Coruscant. Eles mostram as atividades políticas e militares durante as Guerras Clônicas,
       destacando as conspirações, os ataques terroristas e as lutas pelo controle de Coruscant.
@@ -584,26 +856,37 @@ const SWdata = [
       Além disso, a série aprofunda os relacionamentos entre os personagens principais, como Anakin Skywalker, Obi-Wan Kenobi, Ahsoka Tano e muitos outros.
       "The Clone Wars" amplia o universo Star Wars, apresentando histórias emocionantes e expandindo a compreensão dos eventos e
       personagens desse período turbulento da galáxia.`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xc9_njG5dAo?si=HALRcZpXIZvy8nLq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },
   {
     name: "Kamino",
     Information: `Kamino era um planeta aquático localizado em um sistema estelar extragaláctico que zanzava ao sul do Labirinto Rishi.
-  Ele era habitado pelos Kaminoanos—uma raça de seres altos e elegantes que era considerada uma espécie misteriosa que tendia a se resguardar.
-  Eles também eram conhecidos por sua tecnologia de clonagem que em última análise levou à criação do exército de clones da República Galáctica.
-  <b>História<b> Pré-Guerras Clônicas: Perto do início das Guerras Clônicas, o caçador de recompensas Jango Fett foi encarregado do assassinato da senadora Padmé Amidala, de Naboo.
-  Fett tinha um companheiro de recompensas, Zam Wesell, tentando matá-la. Após uma tentativa fracassada, o Clawdite foi perseguido pelo Mestre Jedi Obi-Wan Kenobi e seu Padawan, 
-  Anakin Skywalker. O Jedi logo a capturou, mas Fett atirou no caçador de recompensas com um sabre de Kamino antes que ela pudesse revelar qualquer informação. 
-  Kenobi, usando o dardo como um meio de encontrar Fett, foi informado por Dexter Jettster que o dardo se originou de Kamino. Logo, Kenobi encontrou Kamino e
-  descobriu o exército de clones que estava sendo produzido nele.`,
+    Ele era habitado pelos Kaminoanos—uma raça de seres altos e elegantes que era considerada uma espécie misteriosa que tendia a se resguardar.
+    Eles também eram conhecidos por sua tecnologia de clonagem que em última análise levou à criação do exército de clones da República Galáctica.
+    <b>História<b> Pré-Guerras Clônicas: Perto do início das Guerras Clônicas, o caçador de recompensas Jango Fett foi encarregado do assassinato da senadora Padmé Amidala, de Naboo.
+    Fett tinha um companheiro de recompensas, Zam Wesell, tentando matá-la. Após uma tentativa fracassada, o Clawdite foi perseguido pelo Mestre Jedi Obi-Wan Kenobi e seu Padawan, 
+    Anakin Skywalker. O Jedi logo a capturou, mas Fett atirou no caçador de recompensas com um sabre de Kamino antes que ela pudesse revelar qualquer informação. 
+    Kenobi, usando o dardo como um meio de encontrar Fett, foi informado por Dexter Jettster que o dardo se originou de Kamino. Logo, Kenobi encontrou Kamino e
+    descobriu o exército de clones que estava sendo produzido nele.`,
     image: imgKamino,
     filmes: [
       {
-        titulo: "Star Wars: Episódio II - Ataque dos Clones (2002)",
-        // imporat uma imagem da capa do fime e fica igual a imgage linha 11 - tira a string
-        capaDoFilme: retorno_1983,
-        // igual ao Information
+        titulo: "Star Wars: Episódio II",
+        titulo2: "Ataque dos Clones (2002)",
+        capaDoFilme: clones_2000,
+        capaDoFilme2: clones_2002_2,
         sinopse: `A sinopse do filme relacionada com a cidade Kamino é apresentado neste filme,
       Kamino é apresentado neste filme como um planeta oceânico isolado, lar dos Kaminoanos, uma raça de seres altos e esguios. Durante a trama,
       o Jedi Obi-Wan Kenobi investiga a origem de um exército clone que está sendo criado secretamente para a República Galáctica.
@@ -615,6 +898,17 @@ const SWdata = [
       Enquanto Obi-Wan continua sua busca pela verdade, Anakin se apaixona por Padmé, mesmo que os Jedi sejam proibidos de ter relacionamentos românticos. Enquanto isso, o Conde Dookan reúne um exército de droides separatistas, preparando-se para enfrentar a República.
       A trama se desenrola com Obi-Wan descobrindo uma conspiração maior envolvendo o Conde Dookan e os Sith, enquanto Anakin lida com suas emoções e sentimentos conflitantes. O filme culmina em uma batalha épica entre os Jedi e os separatistas em Geonosis, onde Anakin, Obi-Wan e Padmé se veem em perigo mortal.
       "Ataque dos Clones" explora a construção do conflito entre a República e os separatistas, o crescimento do relacionamento entre Anakin e Padmé, além de revelar mais detalhes sobre o plano sinistro dos Sith para controlar a galáxia. O filme prepara o terreno para os eventos dramáticos que acontecerão no próximo capítulo da saga..`,
+        trailer: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/lTetztwV6DY?si=S2QCB9Mjj2bQkfF1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ),
       },
     ],
   },

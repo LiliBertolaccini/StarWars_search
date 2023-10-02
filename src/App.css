@@ -17,15 +17,16 @@ body {
 .table {
   border: 2px solid #EEC643;
   font-size: 2rem;
-  margin: 3rem;
+  margin: 3rem auto;
   text-align: center;
   border-radius: 15px;
   font-weight: 300;
+  width: 90vw;
 }
 
 th {
   font-weight: 500;
-  line-heigth: 10;
+  line-height: 2;
   border: none;
 }
 
@@ -41,8 +42,174 @@ th {
   width: 100vw;
 }
 
+.img-planeta {
+  width: 30rem;
+}
+
+.planetas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.filmes {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  max-width: 70vw;
+}
+
+.planeta-h1 {
+  color: #EEC643;
+  font-size: 3.6rem;
+  margin: 2rem auto;
+  weight: 600;
+}
+
+.planeta-h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  weight: 500;
+  margin-top: 2rem;
+}
+
+.planeta-h3 {
+  font-size: 2rem;
+  margin: 0 3rem 3rem 3rem;
+  line-height: 1.8;
+  
+}
+
+.planeta-h4 {
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  line-height: 1.8;
+}
+
+.planetas-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  width: 70vw;
+  border: 2px solid #EEC643;
+  border-radius: 15px;
+}
+
+.filmes-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 32rem;
+  border: 2px solid #EEC643;
+  width: 22rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filme-titulo {
+  height: 7rem;
+  border-bottom: 1px solid #EEC643;
+  margin-top: 1rem;
+}
+
+
+.planeta-capa {
+  height: 30rem;
+  display: flex;
+  align-items: center;
+}
+
+.img-capaFilme {
+  width: 15rem;
+}
+
 footer {
   font-size: 1.0rem;
   padding: 10px;
   background-color: #202020;
+}
+
+.modal-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(3.0rem);
+  margin-bottom: 5%;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  position: relative;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 5rem 0;
+}
+
+.modal-imgBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 3rem;
+}
+
+.modal-img {
+  height: 315px;
+  margin-right: 9rem;
+}
+
+.modal-h2 {
+  font-size: 3rem;
+  color: #EEC643;
+}
+
+.modal-sinospe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #EEC643;
+  width: 80%;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.modal-h3 {
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.modal-p {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    margin: 2rem;
+  }
+
+.modal-closeButton {
+  display: grid;
+  place-content: center;
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 2rem;
+  border: 2px solid #ced4da;
+  color: #ced4da;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
 }

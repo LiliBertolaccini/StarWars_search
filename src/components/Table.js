@@ -18,13 +18,10 @@ function Table() {
             <th>Órbita</th>
             <th>Diâmetro</th>
             <th>Clima</th>
-            {/*<th>Gravity</th>
-            <th>Terrain</th>*/}
+            <th>Terrain</th>
             <th>Água</th>
             <th>População</th>
-            <th>Filmes/Séries</th>
-            {/*<th>Created</th>
-            <th>Edited</th>
+            {/*<th>Edited</th>
             <th>URL</th>*/}
           </tr>
         </thead>
@@ -37,22 +34,20 @@ function Table() {
                   <td data-testid="planet-name">
                     <button
                     type = "button"
-                    onClick = { () => {setPlanet(planet.name);
-                    } }
+                    onClick={() => {
+                      setPlanet(planet.name);
+                    }}                    
                     >{ planet.name }</button>
                     </td>
 
                   <td>{ planet.rotation_period }</td>
                   <td>{ planet.orbital_period }</td>
                   <td>{ planet.diameter }</td>
-                  {/*<td>{ planet.climate }</td>
-                  <td>{ planet.gravity }</td>*/}
+                  <td>{ planet.climate }</td>
                   <td>{ planet.terrain }</td>
                   <td>{ planet.surface_water }</td>
                   <td>{ planet.population }</td>
-                  <td>{ planet.films }</td>
-                  {/*<td>{ planet.created }</td>
-                  <td>{ planet.edited}</td>
+                  {/*<td>{ planet.edited}</td>
                   <td>{ planet.url }</td>*/}
                 </tr>
               ))
