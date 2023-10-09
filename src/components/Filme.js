@@ -7,7 +7,6 @@ export default function Filme({movie}) {
   useEffect(() => {
     setCloseMovie(movie)
   }, [movie]);
-  console.log(movie);
   return (
     <div>
   {

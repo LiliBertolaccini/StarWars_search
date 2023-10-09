@@ -55,13 +55,13 @@ function Table() {
           <div className="footer-content">
     <div className="footer-div-ref">
       <ul className="footer-list">
-      <p className="footer-ref">Referências:</p>
+      <p className="footer-ref">Referências: </p>
       <li><a href="https://starwars.fandom.com/pt" target="_blank" rel="noreferrer" className="footer-link">Star Wars Fandom</a></li>
       <li><a href="https://www.imdb.com/" target="_blank" rel="noreferrer" className="footer-link">IMDB</a></li>
     </ul>
     </div>
     <div className="footer-div-contato">
-      <p className="footer-contato">Contato:</p>
+      <p className="footer-contato">Contato: </p>
       <ul className="footer-list">
       <li><a href="https://github.com/LiliBertolaccini" target="_blank" rel="noreferrer" className="footer-link">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/lilian-barros-bertolaccini/" target="_blank" rel="noreferrer" className="footer-link">Linkedin</a></li>
@@ -69,7 +69,6 @@ function Table() {
     </div>
     </div>
   </footer>
-
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useMemo, useState } from 'react';
 import StarWarContext from '../context/StarWarContext';
 import NumberFilter from './NumberFilter';
 import StarWarsTopo from '../images/StarWars_topo.png';
@@ -16,11 +16,11 @@ function Forms() {
   } = useContext(StarWarContext);
 
   const columnPropriedade = [
-    'População',
-    'Órbita',
-    'Diâmetro',
-    'Período de Rotação',
-    'Água',
+    "population",
+    "orbital_period",
+    "diameter",
+    "rotation_period",
+    "surface_water",
   ];
 
   const [columnInput, setColumnInput] = useState(columnPropriedade);
@@ -30,14 +30,19 @@ function Forms() {
     value: 0,
   });
   const [sortList, setSortList] = useState({
-    column: 'População',
-    sort: 'ASC',
+    column: "population",
+    sort: "ASC",
   });
+  const [attList, setAttList] = useState();
 
   const handleChange = ({ target }) => {
     const { name, value } = target;
     setFilterNumber((prev) => ({ ...prev, [name]: value }));
   };
+
+  useMemo(() => {
+    setAttList(dataPlanets);
+  },[dataPlanets])
 
   useEffect(() => {
     if (search.length > 0) {
@@ -46,9 +51,9 @@ function Forms() {
       );
       setListPlanet(dataSearch);
     } else {
-      setListPlanet(dataPlanets);
+      setListPlanet(attList);
     }
-  }, [dataPlanets, search, setListPlanet]);
+  }, [dataPlanets, search, listPlanet, sortList, setListPlanet, attList]);
 
   useEffect(() => {
     setFilterNumber({
@@ -62,7 +67,7 @@ function Forms() {
     setColumnInput(columnInput.filter((item) => item !== filterNumber.column));
     setFilterInput((prev) => {
       const value = [...prev, filterNumber];
-      setListPlanet(NumberFilter(listPlanet, value));
+      setAttList(NumberFilter(listPlanet, value));
       console.log('1', listPlanet);
       return value;
     });
@@ -76,11 +81,21 @@ function Forms() {
       (el) => el[sortList.column] === 'unknown'
     );
     if (sortList.sort === 'ASC') {
-      planetValue.sort((a, b) => +a[sortList.column] - +b[sortList.column]);
+      planetValue.sort((a, b) => a[sortList.column] - b[sortList.column]);
     } else {
-      planetValue.sort((a, b) => +b[sortList.column] - +a[sortList.column]);
+      planetValue.sort((a, b) => b[sortList.column] - a[sortList.column]);
     }
-    return setListPlanet([...planetValue, ...valueUnknown]);
+
+    setAttList([...planetValue, ...valueUnknown]);
+    console.log(
+      "2",
+      planetValue,
+      listPlanet,
+      valueUnknown,
+      typeof sortList.sort,
+      attList,
+    );
+    return setListPlanet(attList);
   };
 
   return (
@@ -212,7 +227,7 @@ function Forms() {
             className="search-button-remover"
             onClick={() => {
               setFilterInput([]);
-              setListPlanet(dataPlanets);
+              setAttList(dataPlanets);
             }}
             type="button"
             data-testid="button-remove-filters"
