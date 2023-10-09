@@ -21,8 +21,6 @@ function Table() {
             <th>Terrain</th>
             <th>Água</th>
             <th>População</th>
-            {/*<th>Edited</th>
-            <th>URL</th>*/}
           </tr>
         </thead>
         <tbody>
@@ -30,16 +28,14 @@ function Table() {
             listPlanet && listPlanet
               .map((planet) => (
                 <tr key={ planet.name }>
-
                   <td data-testid="planet-name">
-                    <button
-                    type = "button"
+                    <p
+                    className="planet-name"
                     onClick={() => {
                       setPlanet(planet.name);
                     }}                    
-                    >{ planet.name }</button>
+                    >{ planet.name }</p>
                     </td>
-
                   <td>{ planet.rotation_period }</td>
                   <td>{ planet.orbital_period }</td>
                   <td>{ planet.diameter }</td>
@@ -53,14 +49,27 @@ function Table() {
               ))
           }
         </tbody>
-      </table>
-      <footer>
-        <p>Referências:</p>
-        <ul>
-          <li>https://starwars.fandom.com/</li>
-          <li>https://www.imdb.com/</li>
-        </ul>
-      </footer>
+        </table>
+
+        <footer className="footer-box">
+          <div className="footer-content">
+    <div className="footer-div-ref">
+      <ul className="footer-list">
+      <p className="footer-ref">Referências:</p>
+      <li><a href="https://starwars.fandom.com/pt" target="_blank" rel="noreferrer" className="footer-link">Star Wars Fandom</a></li>
+      <li><a href="https://www.imdb.com/" target="_blank" rel="noreferrer" className="footer-link">IMDB</a></li>
+    </ul>
+    </div>
+    <div className="footer-div-contato">
+      <p className="footer-contato">Contato:</p>
+      <ul className="footer-list">
+      <li><a href="https://github.com/LiliBertolaccini" target="_blank" rel="noreferrer" className="footer-link">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/lilian-barros-bertolaccini/" target="_blank" rel="noreferrer" className="footer-link">Linkedin</a></li>
+    </ul>
+    </div>
+    </div>
+  </footer>
+
     </div>
   );
 }
