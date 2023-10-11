@@ -25,7 +25,7 @@ O objetivo deste projeto foi praticar habilidades em CSS, e a escolha do univers
 
   ‣ Instale as dependências: npm install
   
-  ‣ Inicie a aplicação: npm star
+  ‣ Inicie a aplicação: npm start
 
 
 
