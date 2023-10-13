@@ -6,11 +6,25 @@ Este é um site desenvolvido enquanto estava cursando a Trybe(Full Stack), para 
 
 O objetivo deste projeto foi praticar habilidades em CSS, e a escolha do universo Star Wars foi motivada pela riqueza de informações e meu interesse pessoal nesse universo.
 
-##  
-<img src="image-21.png" alt="R2-D2" width="20px"> Deploy:
+## <img src="image-21.png" alt="R2-D2" width="20px"> Deploy:
 - [link: Star Wars Search](star-wars-search-rho.vercel.app)
 
-<!--<img src="image-site.png" alt="capa do site" width="900px" >-->
+<img src="Star-Wars-Search.mov" alt="capa do site" width="900px" >
+
+[Assista ao vídeo](Star-Wars-Search.mov)
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=1imekVRsvI0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+<img src="image-site.png" alt="capa do site" width="900px" >
+
 <!--Clique na imagem abaixo-->
 #### Vídeo da apresentação do site:
  clique na imagem abaixo
