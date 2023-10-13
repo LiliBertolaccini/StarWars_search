@@ -8,29 +8,10 @@ O objetivo deste projeto foi praticar habilidades em CSS, e a escolha do univers
 
 - [link: Star Wars Search](star-wars-search-rho.vercel.app)
 
-<img src="Star-Wars-Search.mov" alt="capa do site" width="900px" >
-
-[Assista ao vídeo](Star-Wars-Search.mov)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1imekVRsvI0?si=xjgcFdVz3isKm4Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<img src="image-site.png" alt="capa do site" width="900px" >
-
-<!--Clique na imagem abaixo-->
-
 #### Vídeo da apresentação do site:
 
 clique na imagem abaixo
 [![Assista ao vídeo](image-site.png)](https://www.youtube.com/watch?v=1imekVRsvI0)
-<!--<iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/watch?v=1imekVRsvI0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>-->
 
 ## <img src="image-18.png" alt="darth-v" width="20px" > Stacks Utilizada:
 
