@@ -1,35 +1,28 @@
-
-# <img src="image-3.png" alt="Star Wars Search" width="30px">  Star Wars Search
-
+# <img src="image-3.png" alt="Star Wars Search" width="30px"> Star Wars Search
 
 Este é um site desenvolvido enquanto estava cursando a Trybe(Full Stack), para explorar informações sobre os planetas da saga Star Wars. Adicionei a função que ao selecionar um planeta, você terá acesso a detalhes sobre ele, incluindo capas de filmes, séries e animações relacionadas. Ao escolher um filme, será exibido o trailer, capa e sinopse.
 
 O objetivo deste projeto foi praticar habilidades em CSS, e a escolha do universo Star Wars foi motivada pela riqueza de informações e meu interesse pessoal nesse universo.
 
 ## <img src="image-21.png" alt="R2-D2" width="20px"> Deploy:
+
 - [link: Star Wars Search](star-wars-search-rho.vercel.app)
 
 <img src="Star-Wars-Search.mov" alt="capa do site" width="900px" >
 
 [Assista ao vídeo](Star-Wars-Search.mov)
 
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/watch?v=1imekVRsvI0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1imekVRsvI0?si=xjgcFdVz3isKm4Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <img src="image-site.png" alt="capa do site" width="900px" >
 
 <!--Clique na imagem abaixo-->
+
 #### Vídeo da apresentação do site:
- clique na imagem abaixo
+
+clique na imagem abaixo
 [![Assista ao vídeo](image-site.png)](https://www.youtube.com/watch?v=1imekVRsvI0)
-          <!--<iframe
+<!--<iframe
             width="560"
             height="315"
             src="https://www.youtube.com/watch?v=1imekVRsvI0"
@@ -39,31 +32,28 @@ O objetivo deste projeto foi praticar habilidades em CSS, e a escolha do univers
             allowfullscreen
           ></iframe>-->
 
-##  <img src="image-18.png" alt="darth-v" width="20px" >  Stacks Utilizada:
+## <img src="image-18.png" alt="darth-v" width="20px" > Stacks Utilizada:
 
-  - CSS
-  - React
-  - Context API
-  - React Hooks
+- CSS
+- React
+- Context API
+- React Hooks
 
-## <img src="image-19.png" alt="c-3po" width="20px">  Instalação:
+## <img src="image-19.png" alt="c-3po" width="20px"> Instalação:
 
-  ‣ Clone o repositório: git clone git@github.com:LiliBertolaccini/StarWars_search.git
+‣ Clone o repositório: git clone git@github.com:LiliBertolaccini/StarWars_search.git
 
-  ‣ Instale as dependências: npm install
-  
-  ‣ Inicie a aplicação: npm start
+‣ Instale as dependências: npm install
 
-
+‣ Inicie a aplicação: npm start
 
 ## <img src="image-1.png" alt="sabre-de-luz" width="20px"> Agradecimentos e colaboração:
+
 [Karla Oshikawa](https://github.com/karlaoshikawa)
 
-
-##  <img src="image-17.png" alt="Chewbacca" width="20px"> Contato:
+## <img src="image-17.png" alt="Chewbacca" width="20px"> Contato:
 
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Lili%20Bertolaccini%20-brightgreen)](https://github.com/LiliBertolaccini)
-
 
 [![LinkedIn Profile](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/lilian-barros-bertolaccini/)
 
