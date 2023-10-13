@@ -45,11 +45,6 @@ table tr:last-child td {
   border-bottom: none;
 }
 
-/*.table th, .table td {
-  padding: 7px;
-  text-align: left;
-  border-bottom: 1px solid #EEC643;
-}*/
 
 .table th:first-child, .table td:first-child {
   border-top-left-radius: 0.5px;
@@ -362,9 +357,6 @@ input[type="radio"]:checked {
 
 .footer-link {
   font-size: 1.4rem;
-  /*display: block;*/
-  /*margin-bottom: 7px;*/
-  /*color: #EEC643;*/
   color: #D8D5DB;
   text-decoration: none;
 }
@@ -374,13 +366,6 @@ input[type="radio"]:checked {
   font-weight: 500;
   cursor: pointer;
 }
-
-
-/*.footer-div-ref {
-  width: 48%;
-  /*text-align: left;*/
-/*}*/*/
-
 
 .modal-background {
   display: flex;
@@ -399,7 +384,6 @@ input[type="radio"]:checked {
   top: 0;
   width: 70%;
   background-color: rgba(0, 0, 0, 0.5);
-  /*position: relative;*/
   flex-direction: column;
   padding: 3rem;
   margin: 5rem auto;

@@ -22,7 +22,7 @@ clique na imagem abaixo
 
 ## <img src="image-19.png" alt="c-3po" width="20px"> Instalação:
 
-‣ Clone o repositório: git clone git@github.com:LiliBertolaccini/StarWars_search.git
+‣ Clone o repositório: "git clone git@github.com:LiliBertolaccini/StarWars_search.git"
 
 ‣ Instale as dependências: npm install
 
