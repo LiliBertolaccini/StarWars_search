@@ -10,8 +10,10 @@ O objetivo deste projeto foi praticar habilidades em CSS, e a escolha do univers
 
 #### Vídeo da apresentação do site:
 
-clique na imagem abaixo
-[![Assista ao vídeo](image-site.png)](https://www.youtube.com/watch?v=1imekVRsvI0)
+
+
+https://github.com/LiliBertolaccini/StarWars_search/assets/107147278/e7b5c911-d890-462f-8b79-9be6a9bf2541
+
 
 ## <img src="image-18.png" alt="darth-v" width="20px" > Stacks Utilizada:
 
